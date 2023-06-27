@@ -1,3 +1,6 @@
+const { logPlugin } = require("@babel/preset-env/lib/debug");
+
+let arr1 = ["Hope","Prince", "Aisha"]
 function writeCards(array, name) {
     let newArrays =[];
     for (let i= 0; i < array.length; i++) {
@@ -6,17 +9,16 @@ function writeCards(array, name) {
     }
     return newArrays;
   }
-  console.log(writeCards(["Hope","Prince"], "house"));
+  console.log(writeCards(arr1, "house"));
 
 
 
-function countDown(i) {
-    let a = 0;
-    while (a<=i) {
-        console.log(a);
-        a++;
+  function loopingDown() {
+    for(i=10;i>=0;i--) {
+      console.log(i);
     }
-}
+  }
+  console.log(loopingDown());
 
 
 
